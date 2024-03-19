@@ -9,7 +9,10 @@ openai_api_key = os.environ.get("OPENAI_API_KEY")
 # Define the chain and LLM first
 llm = ChatOpenAI()
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are creative senior business consultant."),
+    ("system", '''
+    You are creative senior business consultant. You will be asked to provide a business idea based on a topic. 
+    Please provide a creative business idea based on the topic and step by step guide to implement it.
+    '''),
     ("user", "Can you give me business idea about {topic}")
 ])
 output_parser = StrOutputParser()
