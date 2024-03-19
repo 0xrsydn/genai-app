@@ -1,1 +1,1 @@
-# genai-app
+# Generative AI App 
