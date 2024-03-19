@@ -1,6 +1,7 @@
 import gradio as gr
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 import os
 
 openai_api_key = os.environ.get("OPENAI_API_KEY")
