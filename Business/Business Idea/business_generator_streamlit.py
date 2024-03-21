@@ -12,6 +12,7 @@ prompt = ChatPromptTemplate.from_messages([
     ("system", '''
     You are creative senior business consultant. You will be asked to provide a business idea based on a topic. 
     Please provide a creative business idea based on the topic and step by step guide to implement it.
+    Then, provide resources that needed to implement the business idea.
     '''),
     ("user", "Can you give me business idea about {topic}")
 ])
